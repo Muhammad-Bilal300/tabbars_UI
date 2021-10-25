@@ -16,8 +16,10 @@ class _TabbarOneState extends State<TabbarOne> {
         appBar: AppBar(
           backgroundColor: Colors.redAccent,
           bottom: TabBar(
-            indicatorColor: Colors.white,
-            indicatorWeight: 2.5,
+              unselectedLabelColor: Colors.white,
+              labelColor: Colors.redAccent,
+              indicator: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50), color: Colors.white),
               labelStyle: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
               tabs: [
                 Tab(
@@ -37,16 +39,18 @@ class _TabbarOneState extends State<TabbarOne> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Icon(
                     Icons.home,
                     size: 70,
                   ),
-                  Text("Home Screen",style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.redAccent,
-                    fontWeight: FontWeight.bold
-                  ),)
+                  Text(
+                    "Home Screen",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.redAccent,
+                        fontWeight: FontWeight.bold),
+                  )
                 ],
               ),
             ),
@@ -54,16 +58,18 @@ class _TabbarOneState extends State<TabbarOne> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Icon(
                     Icons.person,
                     size: 70,
                   ),
-                  Text("About_Us Screen",style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.redAccent,
-                    fontWeight: FontWeight.bold
-                  ),)
+                  Text(
+                    "About_Us Screen",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.redAccent,
+                        fontWeight: FontWeight.bold),
+                  )
                 ],
               ),
             ),
@@ -71,16 +77,18 @@ class _TabbarOneState extends State<TabbarOne> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Icon(
                     Icons.contact_page,
                     size: 70,
                   ),
-                  Text("Contact_Us Screen",style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.redAccent,
-                    fontWeight: FontWeight.bold
-                  ),)
+                  Text(
+                    "Contact_Us Screen",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.redAccent,
+                        fontWeight: FontWeight.bold),
+                  )
                 ],
               ),
             ),
