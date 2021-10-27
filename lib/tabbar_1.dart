@@ -19,7 +19,7 @@ class _TabbarOneState extends State<TabbarOne> {
               unselectedLabelColor: Colors.white,
               labelColor: Colors.redAccent,
               indicator: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50), color: Colors.white),
+                  borderRadius: BorderRadius.circular(40), color: Colors.white),
               labelStyle: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
               tabs: [
                 Tab(
